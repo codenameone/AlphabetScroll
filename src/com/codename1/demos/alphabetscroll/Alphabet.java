@@ -82,7 +82,7 @@ public class Alphabet {
                     for(Component cmp : characterContainer) {
                         MultiButton m = (MultiButton)cmp;
                         if(Character.toUpperCase(m.getTextLine1().charAt(0)) == c) {
-                            m.requestFocus();
+                            characterContainer.scrollComponentToVisible(m);
                             return;
                         }
                     }
